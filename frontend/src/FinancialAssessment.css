@@ -1,0 +1,127 @@
+/* General Layout */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Content Layout: Sliders (Left) + Chart (Right) */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Sliders Section */
+  .slider-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .slider-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  /* 🌟 Stylish Slider */
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #3498db, #6dd5fa);
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    cursor: pointer;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  /* 🎭 Slider Thumb (Handle) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    background: #6dd5fa;
+    border: 3px solid #1d6fa5;
+    transform: scale(1.1);
+  }
+  
+  /* Radar Chart (Right Side) */
+  .chart-container {
+    flex: 1;
+    max-width: 350px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Analyze Button */
+  .analyze-btn {
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to right, #3498db, #6dd5fa);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .analyze-btn:hover {
+    background: linear-gradient(to right, #1d6fa5, #4ca8e6);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .chart-container {
+      max-width: 100%;
+    }
+  }
