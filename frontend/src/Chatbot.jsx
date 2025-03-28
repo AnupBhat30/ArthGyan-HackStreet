@@ -24,7 +24,7 @@ ChartJS.register(
 );
 
 // --- SECURITY WARNING ---
-const GEMINI_API_KEY = "AIzaSyCUd4ZMonA-qcB_1sLu0gNgj_VYXkbQo1g"; // Replace with your actual key loaded securely
+const GEMINI_API_KEY = " "; // Replace with your actual key loaded securely
 
 function Chatbot() {
   const [financialData, setFinancialData] = useState({});
