@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyByZxKZTiz-PjKlKgx-mSgSbRIMQQ-Jc6M"; // Replace with your API key
+const API_KEY = ""; // Replace with your API key
 const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
 export const fetchYouTubeVideos = async (query) => {
